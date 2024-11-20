@@ -34,7 +34,7 @@ class Models {
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
 
-         e
+         
             header("Location: ../index.php?message=Applicant deleted successfully&statusCode=200");
             exit;
         } catch (PDOException $e) {
